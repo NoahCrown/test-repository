@@ -1,41 +1,41 @@
-import json
+IMPORT JSON
 
-def get_weather(city):
-    # Mock weather data in JSON format
-    weather_data = """
+DEF GET_WEATHER(CITY):
+    # MOCK WEATHER DATA IN JSON FORMAT
+    WEATHER_DATA = """
     {
-        "New York": {
-            "main": {
-                "temp": 22.5,
-                "humidity": 78
+        "NEW YORK": {
+            "MAIN": {
+                "TEMP": 22.5,
+                "HUMIDITY": 78
             }
         },
-        "London": {
-            "main": {
-                "temp": 18.2,
-                "humidity": 65
+        "LONDON": {
+            "MAIN": {
+                "TEMP": 18.2,
+                "HUMIDITY": 65
             }
         },
-        "Tokyo": {
-            "main": {
-                "temp": 27.3,
-                "humidity": 70
+        "TOKYO": {
+            "MAIN": {
+                "TEMP": 27.3,
+                "HUMIDITY": 70
             }
         }
     }
     """
 
-    # Parse the JSON string into a dictionary
-    data = json.loads(weather_data)
+    # PARSE THE JSON STRING INTO A DICTIONARY
+    DATA = JSON.LOADS(WEATHER_DATA)
 
-    # Check if the city exists in the weather data
-    if city in data:
-        weather = data["main"]  # Incorrect key
-        temp = weather["temp"]
-        humidity = weather["humidity"]
-        print(f"The temperature in {city} is {temp}°C with {humidity}% humidity.")
-    else:
-        print(f"Weather data for {city} not found.")
+    # CHECK IF THE CITY EXISTS IN THE WEATHER DATA
+    IF CITY IN DATA:
+        WEATHER = DATA["MAIN"]  # INCORRECT KEY
+        TEMP = WEATHER["TEMP"]
+        HUMIDITY = WEATHER["HUMIDITY"]
+        PRINT(F"THE TEMPERATURE IN {CITY} IS {TEMP}°C WITH {HUMIDITY}% HUMIDITY.")
+    ELSE:
+        PRINT(F"WEATHER DATA FOR {CITY} NOT FOUND.")
 
-# Test the function
-get_weather("New York")
+# TEST THE FUNCTION
+GET_WEATHER("NEW YORK")
