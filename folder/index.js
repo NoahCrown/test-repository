@@ -1,40 +1,40 @@
-function getWeather(city) {
-    // Mock weather data
-    const weatherData = `{
-      "New York": {
-        "main": {
-          "temp": 22.5,
-          "humidity": 78
+FUNCTION GETWEATHER(CITY) {
+    // MOCK WEATHER DATA
+    CONST WEATHERDATA = `{
+      "NEW YORK": {
+        "MAIN": {
+          "TEMP": 22.5,
+          "HUMIDITY": 78
         }
       },
-      "London": {
-        "main": {
-          "temp": 18.2,
-          "humidity": 65
+      "LONDON": {
+        "MAIN": {
+          "TEMP": 18.2,
+          "HUMIDITY": 65
         }
       },
-      "Tokyo": {
-        "main": {
-          "temp": 27.3,
-          "humidity": 70
+      "TOKYO": {
+        "MAIN": {
+          "TEMP": 27.3,
+          "HUMIDITY": 70
         }
       }
     }`;
   
-    // Parse the JSON string
-    const data = JSON.parse(weatherData);
+    // PARSE THE JSON STRING
+    CONST DATA = JSON.PARSE(WEATHERDATA);
   
-    // Check if city exists in the data
-    if (data.city) {
-      const weather = data.city.main;  // Incorrect key reference
-      const temp = weather.temp;
-      const humidity = weather.humidity;
-      console.log(`The temperature in ${city} is ${temp}°C with ${humidity}% humidity.`);
-    } else {
-      console.log("Weather data for " + city + " not found.");
+    // CHECK IF CITY EXISTS IN THE DATA
+    IF (DATA.CITY) {
+      CONST WEATHER = DATA.CITY.MAIN;  // INCORRECT KEY REFERENCE
+      CONST TEMP = WEATHER.TEMP;
+      CONST HUMIDITY = WEATHER.HUMIDITY;
+      CONSOLE.LOG(`THE TEMPERATURE IN ${CITY} IS ${TEMP}°C WITH ${HUMIDITY}% HUMIDITY.`);
+    } ELSE {
+      CONSOLE.LOG("WEATHER DATA FOR " + CITY + " NOT FOUND.");
     }
   }
   
-  // Test the function
-  getWeather("New York");
+  // TEST THE FUNCTION
+  GETWEATHER("NEW YORK");
   
