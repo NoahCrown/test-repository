@@ -4,7 +4,7 @@ def get_weather(city):
     # Mock weather data in JSON format
     weather_data = """
     {
-        "New York": {
+        "New Yrk": {
             "main": {
                 "temp": 22.5,
                 "humidity": 78
